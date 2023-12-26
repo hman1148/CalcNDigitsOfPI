@@ -39,8 +39,8 @@ int main()
 
     std::vector<std::thread> workerThreads(nThreads);
 
-    std::uint8_t dotCount(0);
-    std::uint8_t newLineCount(0);
+    std::uint8_t dotCount{ 0 };
+    std::uint8_t newLineCount{ 0 };
     auto start = std::chrono::steady_clock::now();
 
     for (decltype(totalTasks) i = 0; i < totalTasks; ++i)

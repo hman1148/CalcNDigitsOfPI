@@ -1,6 +1,5 @@
 #include "WorkerThread.hpp"
 
-
 void WorkerThread::operator()()
 {
     std::lock_guard<std::mutex> lock(this->mutex);
